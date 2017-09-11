@@ -1,0 +1,95 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">      
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+      <link type="text/css" href="/static/css/main.css" rel="stylesheet" >  
+      <title>Sporti</title>
+    </head>
+    <body>
+      <div class="navbar navbar-default navbar-static-top"> 
+        <div class="container"> 
+            <a href="/"><img src="/static/images/Sporti_logo_1.psd" class="img-responsive navbar-brand"></a> 
+            <ol class="nav nav-pills navbar-left">
+              {% for sport in sports%}
+              <li><a href="/sports/{{sport.slug}}/">{{sport.name}}</a></li>
+              {% endfor %}
+            </ol>
+            <ol class="nav nav-pills navbar-right">
+              {% if user.is_authenticated %}
+                <li><a href="{% url 'logout' %}">logout</a></li>
+                <li><a href="{% url 'profile' user.username %}">profile</a></li>
+              {% else %}
+                <li><a href="{% url 'login' %}" >Log In</a></li>
+                <li><a href="{% url 'join' %}" >Sign Up</a></li>
+              {% endif %} 
+            </ol>
+        </div>  
+      </div>
+        {% block content %}
+        {% endblock %}
+    <footer>
+        <div class="footer" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6 about">
+                        <ul>
+                            <li> <a href="{% url 'about' %}"> About Sporti </a> </li>
+                            <li> <a href="{% url 'advertise' %}"> Advertise with us </a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 share">
+                        <ul class="social">
+                          <li> <a href="https://www.facebook.com/UKSPORTi/"> <i class=" fa fa-facebook">   </i> </a> </li>                  
+                          <li> <a href="https://twitter.com/SPORTi_live"> <i class="fa fa-twitter">   </i> </a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                  <p>                            © 2017 Sporti Ltd All Rights Reserved.
+</p>
+                </div>
+            </div>
+        </div>    
+    </footer>
+    <!-- jQuery & -->
+    <!-- Latest compiled JavaScript -->
+    {% include 'snippets/js.html' %}
+    <script>
+    $(document).ready(function(){
+        var $myForm = $('.choice-ajax-form')
+        $myForm.submit(function(event){
+            event.preventDefault()
+            var $formData   = $(this).serialize()
+        var $endpoint   = $myForm.attr('data-url') || window.location.href 
+        console.log($endpoint)
+        console.log($formData)
+        $.ajax({
+          method: "POST",
+          url: $endpoint,
+          data: $formData,
+          sucess: handleFormSuccess,
+          error: handleFormError,
+        })
+        })
+
+        function handleFormSuccess(data, textStatus, jqXHR){
+            console.log(data)
+            console.log(textStatus)
+            console.log(jqXHR)
+            $myForm[0].reset(); // reset form data
+        }
+
+        function handleFormError(jqXHR, textStatus, errorThrown){
+            console.log(jqXHR)
+            console.log(textStatus)
+            console.log(errorThrown)
+        }
+    })
+
+    </script>
+  </body>
+</html>

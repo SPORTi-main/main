@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+<!DOCTYPE html>
+		{% block content %}	
+		<body>
+	        <div class="row">
+	        {% if user.is_authenticated %}
+	    		<div class="col-xs-6 col-xs-offset-3 text-left question_create">
+	                <h2>Step 1: Create the Question</h2>
+	                <div class="panel-body">
+		                <form enctype="multipart/form-data" action=' ' method="post">
+		                	{% csrf_token %}
+		                		<p>Pick a name for your Question:</p>
+		                		<p>{{form.name}}</p>
+		                		<br>
+		                		<p>What Sport is thie Question about?</p>
+		                		<p>{{form.category}}</p>
+		                		<br>
+		                		<p>Pick an image to complement your Question:</p>
+		                	  	<p>{{form.image}}</p>    
+								<br>
+								<input type="submit" value="next" class='submit_question btn pull-right'>
+	
+		              	</form>
+		    		</div> 	
+	            </div>
+		    {% else %}  	
+				<div class="col-xs-6 col-xs-offset-3 text-center">
+	                <div class="panel-heading">			     
+		            	<h2>Create a Question</h2> 
+		            	<a href="{% url 'join' %}">
+							<button type="button" class="btn btn-lg btn-primary">Sign Up</button>	
+						</a>
+					</div>
+					</div>
+	        {% endif %}       
+	        </div>		
+		</body>
+		{% endblock %}
+</html>

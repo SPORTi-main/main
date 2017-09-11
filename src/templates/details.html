@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+<!-- <script>
+    {% block jquery %}
+    {% endblock%}
+</script> -->
+      {% block content %}
+		<body>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-8">
+						<div class="row">
+							<h2 class="question_title">{{questions.name}}</h2>
+						</div>
+						<div class="row question_contents">
+							<div class="col-xs-6">
+								<img src="{{questions.image.url}}" class="align-center">
+							</div>
+							<div class="col-xs-6 text-left">
+								
+								{% for choice in choices|dictsortreversed:'likes.count' %}
+								<ul class="answer">
+								<div class="row choices">
+									<div class="col-xs-3">
+										<li>
+										{{choice.choice}} 
+										</li>	
+									</div>	
+									<div class="col-xs-3">
+										{{choice.likes.count}} votes
+									</div>
+									{% if request.user.is_authenticated %}
+									<div class="col-xs-2">
+										<form class='form' method="post" action="/like/{{choice.id}}/"> {% csrf_token %}
+										<input type="hidden" name="username" value="{{ username }}"/>
+											{% if choice in user.user_likes.all %}
+											<button class=" btn">
+											<span class="remove glyphicon glyphicon-thumbs-down"> Remove vote</span>
+											</button>
+											{% else %}
+											<button class="btn upvote">
+											<span class="glyphicon glyphicon-thumbs-up"></span>
+											</button>
+											{% endif %}
+										</form>	
+									</div>
+								</div>	
+									{% endif %}
+								</ul>	
+								{% endfor %}
+								
+								{% if request.user.is_anonymous %}	
+				            	<a href="{% url 'login' %}" class="add_another_login">
+									<button type="button" class="btn">Login to vote</button>
+								</a>
+								{% endif %}
+								<a href="/questions/{{questions.id}}/add_options/">
+								<button type="button" class="btn add_another pull_right">Add New +</button>	
+								</a>
+							</div>
+								
+						</div>
+						<div class="row discussion text-center">		
+			                	<div class = 'col-xs-6 text-left'>
+									<h3 class="text-center">Discussion</h3>
+									<p>{{questions.comments.count}} comments.</p>
+									{% for comment in comments %}
+									<div class="row">
+										<div class = 'well comment'>
+										<p class='comment_title'>{{ comment.owner }} @ {{ comment.date_added }}
+										</p>
+										<p>{{ comment.body }}</p>
+										</div>	
+									</div>	
+									{% for comment in comment.replies.all %}
+									<div class="row">
+										<div class="col-xs-10 col-xs-offset-2 well reply">
+										<p class='comment_title'>{{ comment.owner }} @ {{ comment.date_added }}
+										</p>
+										<p>{{ comment.body }}</p>
+										</div>
+									</div>
+									{% endfor %}
+									
+									{% empty %}
+									<div class = 'well'>
+										<p>No comments yet, start the debate!</p>
+									</div>
+									{% endfor %}		
+								</div>
+			                	<div class = 'col-xs-5 col-xs-offset-1'>
+			                	{% if user.is_authenticated %}
+			                		<h3>Add a comment</h3>
+				                	<form enctype="multipart/form-data" action='/questions/{{questions.id}}/add_comment/post_url/' method="post">
+				                	{% csrf_token %}
+				                	<p>{{form.body}}</p>
+				                	<input type="submit" value="Post your Comment!" class='submit_question btn btn-lg btn-primary'>
+				                	</form>
+				                {% else %}
+								
+					            	<h2>Something to say?</h2> 
+					            	<a href="{% url 'login' %}">
+										<button type="button" class="btn btn-lg btn-primary">Login to post a Comment</button>
+									</a>
+ 								
+				                {% endif %}
+
+			                	</div>
+
+						</div>
+						<div class="text-center">
+				            <a href="{% url 'create_question' %}">
+								<button type="button" class="btn btn-lg btn-primary">Post your own Question!</button>	
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-4">
+						<div class="text-center top-right">
+				        {% if user.is_authenticated %}
+			                <div class="text-center">
+			                	<h2>Are you SPORTi?</h2>
+			                </div>	
+			                <div class="text-center">
+				            	<a href="{% url 'create_question' %}">
+									<button type="button" class="btn btn-lg btn-primary">Post your own Question!</button>	
+								</a>
+				    		</div> 	
+					    {% else %}  	
+							<div class="text-center">
+				            	<h2>Are you SPORTi?</h2> 
+				            	<a href="{% url 'login' %}">
+									<button type="button" class="btn btn-lg btn-primary">Post your own Question!</button>	
+							</a>
+ 							</div>
+ 							
+				        {% endif %} 
+				        </div>
+							<h2 class="text-center title_underline"">Other {{ questions.category }} questions</h2>	
+							{% for question in similar|dictsortreversed:'comments.count'%}
+							<div class="well text-center">	
+								<div>						
+									<h2> {{question.name}} </h2>
+									<p>{{question.comments.count}} Comments</p>
+									<a href="/questions/{{question.id}}/">
+										<button type="button" class="btn btn-lg btn-primary">have your say!</button>	
+									</a>				
+								</div>
+							</div>	
+						{% endfor %}
+				</div>
+			</div>
+</div>
+		</body>
+
+	{% endblock %}

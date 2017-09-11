@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+     {% block content %}
+    <div class='container'>
+	    <div class="row">
+	    	<div class="col-xs-8">
+			    <div class=title_underline>
+					<h1>{{user.username}}'s Profile</h1>
+				</div>
+				<div class="row">
+					<div class="col-xs-1">
+						<h4>Questions</h4>
+					</div>
+					<div class="col-xs-1 col-xs-offset-1">
+						<h4>Comments</h4>
+					</div>
+					<div class="col-xs-1 col-xs-offset-1">
+						<h4>Votes</h4>
+					</div>
+					<div class="col-xs-1 col-xs-offset-1">
+						<h4>Badges</h4>
+					</div>
+				</div>
+				<div class="user_stats">
+					<div class="well col-xs-1">
+						{{questions.count}}
+					</div>
+					<div class="well col-xs-1 col-xs-offset-1">
+						{{comments.count}}
+					</div>
+					<div class="well col-xs-1 col-xs-offset-1">
+						{{likes.count}}
+					</div>
+					<div class="well col-xs-1 col-xs-offset-1">
+						{{user.badges.count}}
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+					    <div class='title_underline'>
+							<h3>{{user.username}}'s Badges</h3>
+						</div>
+						<table class="badges-table">
+						{% for badge in badges %}
+							<div>
+								<td width='1' class="well badges">
+									<h4 class='text-center'>{{badge.badge}}</h4>
+									<img src="{{badge.image.url}}" class="img-responsive">
+									<p>{{badge.description}}</p>
+								</td>
+							</div>
+						{% if forloop.counter|divisibleby:3 %}
+							</tr><tr>
+						{% endif %}					
+						{% endfor %}
+						</table>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+					    <div class='title_underline'>
+							<h3>Your Details</h3>
+						</div>
+					
+					<div class="row">
+						<div class="col-xs-4">
+							<p>Username:</p>
+						</div>
+						<div class="col-xs-4">
+							<p>{{user.username}}</p>
+						</div>
+					</div>	
+					<div class="row">
+						<div class="col-xs-4">
+							<p>Email:</p>
+						</div>
+						<div class="col-xs-4">
+							<p>{{user.email}}</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-4">
+							<button class="btn btn-danger">Delete Profile</button>
+						</div>
+					</div>					
+					</div>
+				</div>		
+			</div>
+			<div class="col-xs-3 col-xs-offset-1 top-right">
+	                <div class="text-center">
+	                	<h2>Are you SPORTi?</h2>
+	                </div>	
+	                <div class="text-center">
+		            	<a href="{% url 'create_question' %}">
+							<button type="button" class="btn btn-lg btn-primary">Post a Question!</button>	
+						</a>
+		    		</div> 	  
+			</div>
+			<div class="col-xs-3 col-xs-offset-1 trending pull pull-right">
+				<h2 class="title_underline text-center">Your Questions</h2>	
+				{% for question in questions %}
+				<div class="row well">						
+					<h2> {{question.name}}</h2>
+					<p>Created: {{question.date_added}}</p>
+					<a href="/questions/{{question.id}}/">
+						<button type="button" class="btn add pull-right">Edit</button>		
+					</a>
+				</div>	
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	{% endblock %}
+}
+}

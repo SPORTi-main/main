@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+{% block content %}	
+<body>
+	<div class = 'container'>
+		<div class="row">
+			<div class="col-xs-7">
+			<h2>LATEST</h2>
+			<p class="title_underline">Burning questions from the SPORTi community.</p>
+			</div>
+			<div class="col-xs-4 col-xs-offset-1">
+				<div class="search pull-right well">
+		            <form class='form' method="GET" action=".">
+		            <input type="text" placeholder="Search Sporti..." name="query" value="{{request.GET.query}}">
+		            <button class="add btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+		            </form>
+		         </div>
+		    </div>     
+			<div class="col-xs-7">
+				{% if questions|length <= 0 %}
+					<div class="row well latest">
+						<p>No search results. Please try something else.</p>
+					</div>
+				{% endif %}
+				{% for question in questions|dictsortreversed:'date_added' %}
+					{% if forloop.counter <= 10 %}
+						<div class="row well latest">	
+							<div class="col-xs-7">						
+									<a href="/questions/{{question.id}}/"><img src="{{question.image.url}}" class="img-responsive"></a>
+							</div>
+							<div class="col-xs-5">						
+									<a href="/questions/{{question.id}}/"><p class="question"> {{question.name}} </p></a>
+
+									<p> By <a class="author" href="/profile/{{question.user.username}}/">{{question.user.username}}</a>
+									</p>	
+
+									<a class href="/questions/{{question.id}}/">
+										<button type="button" class="btn btn-lg btn-primary">Have your say!</button>		
+									</a>
+
+							</div>
+						</div>	
+					{% endif %}	
+
+				{% endfor %}
+			</div>	
+
+			<div class="col-xs-4 col-xs-offset-1 top-right">
+		        {% if user.is_authenticated %}
+	                <div class="text-center">
+	                	<h2>Are you SPORTi?</h2>
+	                </div>	
+	                <div class="text-center">
+		            	<a href="{% url 'create_question' %}">
+							<button type="button" class="btn btn-lg btn-primary">Post your own Question!</button>	
+						</a>
+		    		</div> 	
+			    {% else %}  	
+					<div class="text-center">
+		            	<h2>Are you SPORTi?</h2> 
+		            	<a href="{% url 'login' %}">
+							<button type="button" class="btn btn-lg btn-primary">Post your own Question!</button>	
+						</a>
+					</div>
+		        {% endif %}       
+			</div>
+			<div class="col-xs-4 col-xs-offset-1 text-center trending pull pull-right">
+				<h2 class="title_underline">Trending</h2>	
+				{% for question in trending|dictsortreversed:'comments.count' %}
+				<div class="row well">						
+					<h2> {{question.name}}</h2>
+					<p>{{question.comments.count}} Comments</p>
+					<a href="/questions/{{question.id}}/">
+						<button type="button" class="btn btn-lg btn-primary">Have your say!</button>		
+					</a>
+				</div>	
+				{% endfor %}
+			</div>
+		</div>
+	</div>				
+</body>
+{% endblock %}

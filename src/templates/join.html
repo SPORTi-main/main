@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+<!DOCTYPE html>
+	{% block content %}	
+		<div class='row'>
+			<div class="col-xs-6 col-xs-offset-3 text-align-center center">
+				<h1 class="title_underline">Join SPORTi</h1>
+				<div class="well">
+<!-- 					{% if form.non_field_errors %}				
+					<ul class='error'>
+					{% for error in form.non_field_errors %}
+					    <li class='ferror'>{{ error }}</li>
+					{% endfor %}
+					</ul>
+					{% endif %} -->
+					<form method="post", action=" . ">
+						{% csrf_token %}
+						<p>Pick your Username:</p>
+						<p>{{form.username}}</p>
+						<div class="error">
+							<p>{{ form.username.errors }}</p>
+						</div>
+						<p>What's your email?</p>
+						<p>{{form.email}}</p>
+						<div class="error">
+							<p>{{form.email.errors}}</p>
+						</div>
+						<p>Select a Password:</p>
+						<p>{{form.password1}}</p>
+						<p>Re-type your Password:</p>
+						<p>{{form.password2}}</p>
+						<div class="error">
+							<p>{{form.password2.errors}}</p>
+						</div>
+						<input type="submit" value="Join" class="btn join pull-right">
+						<br>
+					</form>
+				</div>
+			</div>
+		</div>
+	{% endblock %}

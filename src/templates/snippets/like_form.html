@@ -1,0 +1,15 @@
+{% if request.user.is_authenticated %}
+<form class='form' method="post" action="/like/{{choice.id}}/"> {% csrf_token %}
+<input type="hidden" name="username" value="{{ username }}"/>
+	{% if choice in user.user_likes.all %}
+	<button class="btn">
+	<span class="remove glyphicon glyphicon-thumbs-down"> Remove vote</span>
+	</button>
+	{% else %}
+	<button class="btn upvote">
+	<span class="glyphicon glyphicon-thumbs-up"></span>
+	</button>
+	{% endif %}
+
+</form>
+{% endif %}

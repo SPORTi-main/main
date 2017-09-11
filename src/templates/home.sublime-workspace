@@ -1,0 +1,389 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"qu",
+				"question"
+			],
+			[
+				"model",
+				"models〔module〕"
+			],
+			[
+				"mode",
+				"models〔module〕"
+			],
+			[
+				"url",
+				"urls"
+			],
+			[
+				"q",
+				"question"
+			],
+			[
+				"ques",
+				"question_id"
+			],
+			[
+				"vi",
+				"view_count〔argument〕"
+			],
+			[
+				"v",
+				"view_count"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"borde",
+				"border-bottom"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"font",
+				"font-stretch"
+			],
+			[
+				"style",
+				"font-style"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"span",
+				"span12"
+			],
+			[
+				"tex",
+				"text-center"
+			],
+			[
+				"size",
+				"font-size"
+			],
+			[
+				"col",
+				"col-xs-4"
+			],
+			[
+				"nav",
+				"navbar-right"
+			],
+			[
+				"for",
+				"form\tTag"
+			],
+			[
+				"btn",
+				"button\tTag"
+			],
+			[
+				"Http",
+				"HttpResponse〔class〕"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"use",
+				"user.age"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"spec",
+				"spectrumMain"
+			],
+			[
+				"views",
+				"views.home"
+			],
+			[
+				"http",
+				"HttpResponse〔class〕"
+			],
+			[
+				"hiring",
+				"I select 'No longer hiring for this role' \t [when in Deleting a match_record]"
+			],
+			[
+				"I",
+				"I am a Company \t [given in Sending Matches to Companies]"
+			],
+			[
+				"def",
+				"def\tFunction"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 368.0,
+		"last_filter": "html",
+		"selected_items":
+		[
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"CSS",
+				"Set Syntax: CSS"
+			],
+			[
+				"gher",
+				"Set Syntax: Gherkin"
+			],
+			[
+				"hmtl",
+				"Set Syntax: HTML"
+			],
+			[
+				"python",
+				"Set Syntax: Python"
+			],
+			[
+				"gherki",
+				"Set Syntax: Gherkin"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"gherkin",
+				"Set Syntax: Gherkin"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 489.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"cucumber",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Sam/myCode/sportrate/main_app/urls.py",
+		"/Users/Sam/myCode/sportrate/main_app/views.py",
+		"/Users/Sam/myCode/sportrate/main_app/models.py",
+		"/Users/Sam/myCode/sportrate/main_app/templates/home.html",
+		"/Users/Sam/myCode/sportrate/main_app/templates/details.html",
+		"/Users/Sam/myCode/sportrate/main_app/static/home.css",
+		"/Users/Sam/myCode/sportrate/main_app/templates/question.html",
+		"/Users/Sam/myCode/sportrate/main_app/question.html",
+		"/Users/Sam/myCode/sportrate/sportrate/settings.py",
+		"/Users/Sam/myCode/spectrum/spectrumMain/static/home.css",
+		"/Users/Sam/myCode/sportrate/main_app/static/bootstrap.min.css",
+		"/Users/Sam/myCode/sportrate/sportrate/urls.py",
+		"/Users/Sam/Downloads/WindowsForms-csharp/Bin/Demo.xsl",
+		"/Users/Sam/Desktop/Code Files/Spectrum/spectrum_get_news.py",
+		"/Users/Sam/myCode/spectrum/spectrumMain/views.py",
+		"/Users/Sam/myCode/spectrum/spectrumMain/models.py",
+		"/Users/Sam/myCode/spectrum/spectrumMain/templates/about.html",
+		"/Users/Sam/myCode/spectrum/spectrumMain/templates/profile.html",
+		"/Users/Sam/myCode/spectrum/spectrumMain/templates/read.html",
+		"/Users/Sam/myCode/spectrum/spectrumMain/templates/home.html",
+		"/Users/Sam/myCode/spectrum/spectrumMain/urls.py",
+		"/Users/Sam/myCode/spectrum/spectrum/urls.py",
+		"/Users/Sam/myCode/spectrum/spectrum/settings.py",
+		"/Users/Sam/myCode/spectrum/spectrumMain/admin.py",
+		"/Users/Sam/Desktop/Snap Product/Feature Files/matches_v1.feature",
+		"/Users/Sam/Desktop/Code Files/Spectrum/spectrum_basic.py",
+		"/Users/Sam/Desktop/Snap Product/Feature Files/matchesRemove.feature",
+		"/Users/Sam/Desktop/Snap Product/Feature Files/matchDelete.feature",
+		"/Users/Sam/Desktop/Snap Product/Feature Files/sendingMatches.feature",
+		"/Users/Sam/Desktop/Snap Product/Feature Files/matching.feature",
+		"/Users/Sam/Desktop/Snap Product/Feature Files/crDataCollection.feature",
+		"/Users/Sam/Desktop/Snap Product/Feature Files/matchLearn.feature",
+		"/Users/Sam/Desktop/Snap Product/Feature Files/intercom_events_v2",
+		"/Users/Sam/Desktop/Code Files/test.feature",
+		"/Users/Sam/spectrum_basic.py",
+		"/Users/Sam/Desktop/Code Files/Spectrum/spectrum_user_readings.py",
+		"/Users/Sam/Desktop/Code Files/Spectrum/spectrum_agree.py",
+		"/Users/Sam/Desktop/Code Files/Spectrum/api_check.py",
+		"/Users/Sam/Desktop/Code Files/Spectrum/spectrum_agree.pyc",
+		"/Users/Sam/Desktop/Code Files/Spectrum/spectrum_get_news.pyc"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"modue",
+			"h1",
+			"Model"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "home.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 224.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

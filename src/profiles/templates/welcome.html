@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+    {% block content %}
+    <div class="container">
+    	<div class="row">
+    		<div class="col-xs-7">
+    			<h2 class="title_underline">Welcome to Sporti!</h1>
+    			<div class="well">
+	    			<p>Thanks for joining Sporti and welcome to our community. Before you get started a few things to point out:</p>
+	    			<ul>
+	    				<li>Validate your email to get the latest Sporti news in your inbox</li>
+	    				<li>You can no create your own questions. Get started by logging in here <a href="{% url 'create_question' %}">here</a>.</li>
+	    				<li>Read, comment and vote on the daily questions posted by other Sporti users. The latest are listed <a href="{% url 'home' %}">here</a>.</li>
+	    			</ul>
+	    			<p>It's great to have you with us on Sporti - enjoy!</p>
+	    		</div>	
+    		</div>
+    			<div class="col-xs-4 col-xs-offset-1 top-right pull-right">
+		        {% if user.is_authenticated %}
+	                <div class="text-center">
+	                	<h2>Are you SPORTi?</h2>
+	                </div>	
+	                <div class="text-center">
+		            	<a href="{% url 'create_question' %}">
+							<button type="button" class="btn btn-lg btn-primary">Post your own Question!</button>	
+						</a>
+		    		</div> 	
+			    {% else %}  	
+					<div class="text-center">
+		            	<h2>Are you SPORTi?</h2> 
+		            	<a href="{% url 'login' %}">
+							<button type="button" class="btn btn-lg btn-primary">Login to Post your own Question!</button>	
+						</a>
+					</div>
+		        {% endif %}           
+    	</div>
+    </div>
+ 	{% endblock %}

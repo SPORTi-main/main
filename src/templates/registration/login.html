@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block content %}
+<div class='row'>
+	<div class="col-xs-6 col-xs-offset-1">
+		<h1 class='title_underline'>Login</h1>
+		<div class="well center well">
+			<p>Login to SPORTi to be able to build your own questions or answer and comment on others. Welcome back!</p>
+			<form method="post" action="{% url 'login' %}">
+			{% csrf_token %}
+			<table>
+			<tr>
+			    <td>{{ form.username.label_tag }} </td>
+			    <td>{{ form.username }}</td>
+			</tr>
+			<tr>
+			    <td>{{ form.password.label_tag }} </td>
+			    <td>{{ form.password }}</td>
+			</tr>
+			</table>
+			{% if form.errors %}
+			<p class="error">Your username and password didn't match. Please try again.</p>
+			{% endif %}
+
+			<input type="submit" value="login" class="login btn btn-lg btn-primary"/>
+			<input type="hidden" name="next" value="" />
+			</form>
+			<br>
+			<p><a href="{% url 'password_reset' %}">Reset Password</a></p>
+				
+		</div>
+	</div>
+	<div class="col-xs-3 col-xs-offset-1">
+		<h1 class='title_underline center'>New to Sporti?</h1>
+		<div class="well">
+	         <a href="{% url 'join' %}">
+				<button type="button" class="btn btn-lg btn-primary pull-centre">Join SPORTi</button>	
+		</div>	
+		</a>
+
+	</div>
+</div>
+
+
+
+      {% endblock %}

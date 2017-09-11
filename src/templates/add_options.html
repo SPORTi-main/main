@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+	<body>
+      {% block content %}
+
+      <div class="container">
+      	<div class="row">
+      		<div class="col-xs-10 col-xs-offset-1 add_options">
+		     <h2>Step 2: Add options for your Question:</h2>
+		     {% if form.errors %}
+		     {{form.error}}
+		     {% endif %}
+				<form method = "POST" class='choice-ajax-form' data-url="/questions/{{questions.id}}/add_options/">
+				{% csrf_token %}
+		     	{{form.as_p}}
+		     	<h2>Current Options</h2>
+		     	<p>{{questions.choices.count}}</p>
+
+		      <input type="submit" value="Add" class='add btn btn-lg btn-primary pull-right'>
+		      </form>
+		      <a href="/questions/{{questions.id}}/"><button class="btn">Back</button></a>
+		    </div>  
+	     </div> 
+      </div>
+    </body>
+    {% endblock %}
+

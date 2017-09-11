@@ -1,0 +1,807 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"wid",
+				"width"
+			],
+			[
+				"heigh",
+				"line-height"
+			],
+			[
+				"ba",
+				"badges"
+			],
+			[
+				"ma",
+				"max_length"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"cre",
+				"create_question"
+			],
+			[
+				"pull",
+				"pull-right"
+			],
+			[
+				"get",
+				"get_context_data"
+			],
+			[
+				"col-",
+				"col-xs-2"
+			],
+			[
+				"erro",
+				"error"
+			],
+			[
+				"ob",
+				"objects"
+			],
+			[
+				"send",
+				"send_mail"
+			],
+			[
+				"activat",
+				"activation_key"
+			],
+			[
+				"Pass",
+				"PasswordInput"
+			],
+			[
+				"pas",
+				"password1"
+			],
+			[
+				"clea",
+				"cleaned_data"
+			],
+			[
+				"r",
+				"request"
+			],
+			[
+				"quest",
+				"question"
+			],
+			[
+				"ch",
+				"choice"
+			],
+			[
+				"Question",
+				"QuestionManager"
+			],
+			[
+				"i",
+				"import"
+			],
+			[
+				"con",
+				"contrib"
+			],
+			[
+				"form",
+				"form_class"
+			],
+			[
+				"de",
+				"details"
+			],
+			[
+				"ques",
+				"question_id"
+			],
+			[
+				"d",
+				"django"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"Qu",
+				"QuestionForm"
+			],
+			[
+				"Cho",
+				"ChoicesForm"
+			],
+			[
+				"Create",
+				"CreateView"
+			],
+			[
+				"temp",
+				"template_name"
+			],
+			[
+				"tem",
+				"template_name"
+			],
+			[
+				"Te",
+				"TemplateView"
+			],
+			[
+				"red",
+				"render"
+			],
+			[
+				"url",
+				"urlpatterns"
+			],
+			[
+				"f",
+				"from"
+			],
+			[
+				"h",
+				"HttpResponse"
+			],
+			[
+				"cho",
+				"choice_id"
+			],
+			[
+				"choice",
+				"choice"
+			],
+			[
+				"ge",
+				"get_object_or_404"
+			],
+			[
+				"qi",
+				"question_id"
+			],
+			[
+				"question",
+				"question_id"
+			],
+			[
+				"qu",
+				"question_id"
+			],
+			[
+				"questio",
+				"question_id"
+			],
+			[
+				"use",
+				"username"
+			],
+			[
+				"add",
+				"add_options"
+			],
+			[
+				"sprt",
+				"sport_name"
+			],
+			[
+				"q",
+				"questions"
+			],
+			[
+				"N",
+				"null"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"def",
+				"default"
+			],
+			[
+				"col",
+				"col-xs-offset-1"
+			],
+			[
+				"col-xs",
+				"col-xs-6"
+			],
+			[
+				"res",
+				"request"
+			],
+			[
+				"cl",
+				"col-xs-4"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"htt",
+				"HttpResponseRedirect"
+			],
+			[
+				"is",
+				"is_valid"
+			],
+			[
+				"User",
+				"UserCreationForm"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"al",
+				"align-content"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"paddin",
+				"padding-top"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/sporti/settings/base.py",
+			"settings":
+			{
+				"buffer_size": 3678,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/profiles/views.py",
+			"settings":
+			{
+				"buffer_size": 1654,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/sporti/urls.py",
+			"settings":
+			{
+				"buffer_size": 2318,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main_app/urls.py",
+			"settings":
+			{
+				"buffer_size": 715,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 167.0,
+		"last_filter": "html",
+		"selected_items":
+		[
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"hmt",
+				"Set Syntax: HTML"
+			],
+			[
+				"pyhton",
+				"Set Syntax: Python"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"python",
+				"Set Syntax: Python"
+			],
+			[
+				"HTML",
+				"Set Syntax: HTML"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Install Package Control"
+			],
+			[
+				"",
+				"View: Toggle Minimap"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/admin/Dev_Environments/SPORTI_v2",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/main_app",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/media",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/profiles",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/templates",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/templates/snippets"
+	],
+	"file_history":
+	[
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/questions/urls.py",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/profiles/views.py",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/profiles/models.py",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/main_app/static/css/main.css",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/profiles/templates/profile.html",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/main_app/views.py",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/profiles/admin.py",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/main_app/models.py",
+		"/Users/admin/dev_environments/SPORTI_v2/src/profiles/templates/welcome.html",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/templates/home.html",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/templates/join.html",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/main_app/urls.py",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/sporti/urls.py",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/profiles/urls.py",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/templates/details.html",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/main_app/forms.py",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/templates/login.html",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/templates/snippets/js.html",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/templates/base.html",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/templates/about.html",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/templates/advertise.html",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/templates/snippets/like_form.html",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/templates/registration/password_reset_form.html",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/sporti/settings/base.py",
+		"/Users/admin/dev_environments/SPORTI_v2/src/profiles/utils.py",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/main_app/validators.py",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/templates/profile.html",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/user_app/views.py",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/user_app/models.py",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/user_app/urls.py",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/templates/add_options.html",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/templates/registration/login.html",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/templates/registration/registration:password_reset_done.html",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/templates/create_question.html",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/templates/careers.html",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/templates/contact.html",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/main_app/admin.py",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/sporti/settings/local.py",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/main_app/utils.py",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/templates/sports.html",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/templates/snippets/css/main.css",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/templates/test.html",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/templates/snippets/css.html",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/sporti/settings/__init__.py",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/questions/views.py",
+		"/Users/admin/Dev_Environments/SPORTI_v2/src/sporti/settings/production.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti2/main_app/models.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti2/main_app/views.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti2/main_app/urls.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti2/main_app/templates/details.html",
+		"/Users/admin/Dev_Environments/SPORTi/sporti2/main_app/static/js/main.js",
+		"/Users/admin/Dev_Environments/SPORTi/sporti2/main_app/static/css/main.css",
+		"/Users/admin/Dev_Environments/SPORTi/sporti2/main_app/templates/home.html",
+		"/Users/admin/Dev_Environments/SPORTi/sporti2/main_app/templates/sports.html",
+		"/Users/admin/Dev_Environments/SPORTi/sporti2/main_app/forms.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti2/main_app/templates/join.html",
+		"/Users/admin/Dev_Environments/SPORTi/sporti2/main_app/templates/base.html",
+		"/Users/admin/Dev_Environments/SPORTi/sporti2/main_app/templates/add_options.html",
+		"/Users/admin/Dev_Environments/SPORTi/sporti2/main_app/admin.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti2/main_app/templates/create_question.html",
+		"/Users/admin/Dev_Environments/SPORTi/sporti2/main_app/templates/login.html",
+		"/Users/admin/Dev_Environments/topPod/topPod/topPod/urls.py",
+		"/Users/admin/Dev_Environments/topPod/topPod/topPod/views.py",
+		"/Users/admin/Dev_Environments/topPod/topPod/topPod/templates/base.html",
+		"/Users/admin/Dev_Environments/topPod/topPod/topPod/static/css/main.css",
+		"/Users/admin/Dev_Environments/topPod/topPod/topPod/templates/home.html",
+		"/Users/admin/Dev_Environments/topPod/topPod/config/base_settings.py",
+		"/Users/admin/Dev_Environments/topPod/topPod/topPod/templates/sport.html",
+		"/Users/admin/Dev_Environments/topPod/topPod/config/urls.py",
+		"/Users/admin/Dev_Environments/topPod/topPod/topPod/templates/home",
+		"/Users/admin/Dev_Environments/topPod/topPod/topPod/urls",
+		"/Users/admin/Dev_Environments/topPod/topPod/topPod/base_settings.py",
+		"/Users/admin/Dev_Environments/topPod/topPod/topPod/settings.py",
+		"/Users/admin/Dev_Environments/topPod/topPod/topPod/wsgi.py",
+		"/Users/admin/Dev_Environments/topPod/topPod/manage.py",
+		"/Users/admin/Dev_Environments/topPod/topPod/topPod/migrations/__init__.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti2/main_app/static/js/jquery-migrate-3.0.0.min.js",
+		"/Users/admin/Dev_Environments/SPORTi/sporti2/main_app/templates/profile.html",
+		"/Users/admin/Dev_Environments/SPORTi/sporti2/apps/main_app/models.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/db.sqlite3",
+		"/Users/admin/Dev_Environments/SPORTi/sporti2/config/base_setting.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti2/config/settings/base.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti2/manage.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti2/config/wsgi.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti2/config/base_settings.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/main_app/templates/base.html",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/main_app/static/JS/main.js",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/main_app/templates/home.html",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/config/base_setting.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/main_app/templates/profile.html",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/config/wsgi.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/manage.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/main_app/urls.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/main_app/views.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/main_app/serializers.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/main_app/static/JS/angularRoute-1.6.5.js",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/main_app/static/JS/angular-1.6.5.js",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/main_app/models.py",
+		"/Users/admin/.Trash/settings.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/config/urls.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/main_app/__init__.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/main_app/static/main.css",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/config/settings/base.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/config/__init__.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/main_app/apps.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/sportrate/settings.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/sportrate/wsgi.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/sportrate/__init__.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/sportrate/config/wsgi.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/config/settings/base",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/sportrate/config/settings/base.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/sportrate/config/__init__.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/sportrate/config/urls.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/serializers.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/main_app/static/home.css",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/main_app/templates/login.html",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/main_app/forms.py",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/main_app/templates/create_question.html",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/main_app/templates/add_options.html",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/main_app/templates/join.html",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/main_app/templates/details.html",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/main_app/static/JS/jquery-3.2.1.min.js",
+		"/Users/admin/Dev_Environments/SPORTi/sporti/main_app/admin.py"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 105.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"main_app",
+			"forloop",
+			"View",
+			"form",
+			"error",
+			"errors",
+			"social",
+			"RedirectView",
+			"Data",
+			"add",
+			"%",
+			"like",
+			"user_app",
+			"      <",
+			"choices",
+			"id",
+			"rest",
+			"id",
+			"trending",
+			"treding",
+			"underline",
+			"config",
+			"sporti",
+			"base",
+			"sportrate",
+			"settings",
+			"sportra",
+			"sportrate",
+			"join",
+			"view",
+			"X",
+			";\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/sporti/settings/base.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3678,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1356,
+								1356
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 640.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/profiles/views.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1654,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								202,
+								202
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/sporti/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2318,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								237,
+								237
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/main_app/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 715,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								205,
+								205
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "sporti.sublime-project",
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 231.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
